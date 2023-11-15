@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  scrollbar-width: 4px;
+  scrollbar-color: #e0e1eb;
+  font-family: 'Roboto';
+  font-size: $font-size-16;
+  color: $black;
+  font-weight: 400;
+  line-height: 150%;
+  transition: 0.3s all linear;
+
+  &::-webkit-scrollbar {
+    height: 0 !important;
+  }
+
+  &::-webkit-scrollbar-track {
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #e0e1eb;
+    border-radius: 777px;
+  }
+}

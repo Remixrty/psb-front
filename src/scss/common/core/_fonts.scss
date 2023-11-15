@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@mixin font-normal {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font-semibold {
+  font-weight: 500;
+}
+
+@mixin font-bold {
+  font-weight: 700;
+}
+
+@mixin font-italic {
+  font-style: italic;
+}
+
+@mixin h__h4 {
+  font-size: $h4;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+@mixin h__h3 {
+  font-size: $h3;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+@mixin h__h2 {
+  font-size: $h2;
+  font-weight: 500;
+  line-height: 130%;
+
+  @include md {
+    font-weight: 500;
+  }
+}
+
+@mixin h__h1 {
+  font-size: $h1;
+  font-weight: 700;
+  line-height: 47px;
+
+  @include md {
+    @include h__h2;
+  }
+}
+
+@mixin body-L {
+  //text1
+  font-size: $font-size-18;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+@mixin body-L_bold {
+  @include body-L;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+@mixin body-M {
+  //text2
+  font-size: $font-size-16;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+@mixin body-M_italic {
+  //text2 italic
+  @include body-M;
+  @include font-italic;
+  line-height: 130%;
+}
+
+@mixin body-S {
+  //text3
+  font-size: $font-size-14;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+@mixin body-S_bold {
+  //text3 bold
+  @include body-S;
+  font-weight: 500;
+}
+
+@mixin body-S_italic {
+  //text3 italic
+  @include body-S;
+  @include font-italic;
+}
+
+@mixin body-XS {
+  font-size: $font-size-12;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+@mixin body-XS_medium {
+  //text5 bold
+  @include body-XS;
+  font-weight: 500;
+}
+
+@mixin body-XS_bold {
+  //text5 regular
+  @include body-XS;
+  font-weight: 700;
+}
+
+@mixin text__text7 {
+  font-size: $font-size-16;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+h1 {
+  @include h__h1;
+  span {
+    @include h__h1;
+  }
+}
+
+h2 {
+  @include h__h2;
+  span {
+    @include h__h2;
+  }
+}
+
+h3 {
+  @include h__h3;
+  span {
+    @include h__h3;
+  }
+}
+
+h4 {
+  @include h__h4;
+  span {
+    @include h__h4;
+  }
+}
+
+.body__m {
+  @include body-M;
+}

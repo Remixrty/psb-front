@@ -1,0 +1,73 @@
+/**
+  Десктоп маленький
+ */
+@mixin xl {
+  @media screen and (max-width: $media-xl-1) {
+    @content;
+  }
+}
+
+/**
+  Планшет горизонтальный
+ */
+@mixin lg {
+  @media screen and (max-width: $media-lg-1) {
+    @content;
+  }
+}
+
+/**
+  Планшет вертикальный
+ */
+@mixin md {
+  @media screen and (max-width: $media-md-1) {
+    @content;
+  }
+}
+
+/**
+  Мобильные устройства
+ */
+@mixin sm {
+  @media screen and (max-width: $media-sm-1) {
+    @content;
+  }
+}
+
+.desktop {
+  display: unset;
+  @include md {
+    display: none;
+  }
+}
+
+.desktop-tablet {
+  display: unset;
+  @include sm {
+    display: none;
+  }
+}
+
+.tablet {
+  display: none;
+  @include md {
+    display: unset;
+  }
+  @include sm {
+    display: none;
+  }
+}
+
+.tablet-mobile {
+  display: none;
+  @include md {
+    display: unset;
+  }
+}
+
+.mobile {
+  display: none;
+  @include sm {
+    display: unset;
+  }
+}

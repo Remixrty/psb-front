@@ -1,6 +1,8 @@
-//global
-@import "common/mixins/variables";
-@import "common/mixins/fonts";
+//core
+@import "common/core/variables";
+@import "common/core/responsive";
+@import "common/core/base";
+@import "common/core/fonts";
 
 //components
 @import "common/components/button";

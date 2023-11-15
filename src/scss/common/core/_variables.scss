@@ -1,0 +1,77 @@
+/**
+  Переменные для отступов
+ */
+
+$offset-1: 8px;
+$offset-2: 16px;
+$offset-3: 24px;
+$offset-4: 32px;
+$offset-5: 40px;
+$offset-6: 48px;
+
+/**
+  Переменные для цветов
+ */
+
+$violet--accent: #8762c5;
+$violet: #7c5ab7;
+$yellow--accent: #efca4c;
+$yellow--hover: linear-gradient(
+                0deg,
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0.1)
+),
+#efca4c;
+$light-blue: #dee5f3;
+$light-grey: #f6f6f6;
+$dark-violet: #503c72;
+$grey: #4f4f4f;
+$black: #424242;
+$white: #ffffff;
+$silver-grey: #798396;
+$pink: #e96eed;
+$blue: #e3edff;
+$blue--hover: rgba(227, 237, 255, 0.2);
+$error-color: #eb577b;
+
+/**
+  Переменные для шрифтов
+ */
+
+$font-size-4: 24px;
+$font-size-5: 36px;
+
+$h1: 40px;
+$h2: 24px;
+$h3: 18px;
+$h4: 16px;
+
+$font-size-18: 18px;
+$font-size-16: 16px;
+$font-size-14: 14px;
+$font-size-12: 12px;
+
+/**
+  Основные переменные для media запросов при изменении ширины экрана
+*/
+
+$media-xl: 1440px;
+$media-xl-1: 1439.98px;
+
+$media-lg: 1192px;
+$media-lg-1: 1191.98px;
+
+$media-md: 1024px;
+$media-md-1: 1023.98px;
+
+$media-sm: 768px;
+$media-sm-1: 767.98px;
+
+/**
+  дополнительные переменные для media запросов при изменении ширины экрана
+*/
+
+$media-576: 576px;
+$media-575: 575px;
+$media-425: 425px;
+$media-424: 424px;
